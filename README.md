@@ -15,3 +15,6 @@ ollama run deepseek-r1:1.5b
 `npm install` <br/>
 `composer install`<br/>
 `php -S localhost:9000`
+
+## 开始交流 ask|comment(可选)
+`http://localhost:9000/index.php?ask=你好&comment=你擅长什么`
