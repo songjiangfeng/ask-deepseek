@@ -2,7 +2,9 @@
     "name": "php/deepseekphp",
     "require": {
         "erusev/parsedown": "^1.7",
-        "predis/predis": "^2.3"
+        "predis/predis": "^2.3",
+        "hassankhan/config": "^3.2",
+        "symfony/yaml": "^7.2"
     },
     "autoload": {
         "psr-4": {

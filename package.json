@@ -6,9 +6,5 @@
   },
   "scripts": {
     "build:css": "npx @tailwindcss/cli -i ./src/global.css -o ./dist/main.css  --watch"
-  },
-  "dependencies": {
-    "@tailwindcss/cli": "^4.0.3",
-    "@tailwindcss/oxide-darwin-x64": "^4.0.2"
   }
 }
