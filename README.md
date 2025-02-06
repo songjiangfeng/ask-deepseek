@@ -1,10 +1,10 @@
 # ask-deepseek
 
 
-## 下载ollama
+## 下载ollama 可选
 https://ollama.com
 
-## 本地运行deepseek
+## 本地运行deepseek  可选
 ollama run deepseek-r1:1.5b
 
 ## 启动redis-server
