@@ -1,13 +1,29 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>ASK Deepseek</title>
-    <link href="./dist/main.css" rel="stylesheet">
-
+    <meta charset="utf-8">
+    <title>
+    <?php echo $_GET['ask'] ?? 'Deepseek';?>
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script>
+        tailwind.config = {
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <link rel="shortcut icon" href="https://chatboxai.app/icon.png">
 </head>
-<body>
-<div class=" flex   justify-center h-screen bg-white">
+<body class='bg-slate-100'>
+<div class='mx-auto max-w-5xl shadow-md prose bg-white px-2 py-4'>
+<h1 class="flex flex-row justify-between items-center my-4 h-8">
+            <span>
+                <?php echo $_GET['ask'] ?? 'Deepseek';?>
+            </span>
+            <a href="https://chatboxai.app" target="_blank">
+                <img src="https://chatboxai.app/icon.png" class="w-12">
+            </a>
+        </h1>
 <div class="leading-10 ">
 
 
@@ -44,8 +60,14 @@
     }
 
     ?>
+      <a href="https://www.deepseek.com/ style="display: flex; align-items: center;" class="text-sky-500" target="_blank">
+            <img src="https://chatboxai.app/icon.png" class="w-12 pr-2">
+            <b style="font-size:30px">ASK DEEPSEEK AI</b>
+        </a>
+        <p><a a href="https://www.deepseek.com/" target="_blank">https://www.deepseek.com/</a></p>
     </div>
     </div>
+  
 </body>
 </html>
 
