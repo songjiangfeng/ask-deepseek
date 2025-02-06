@@ -1,0 +1,11 @@
+deepseek:
+  apiKey : <api key>
+  url:     <api address>
+  model:   <api-model>
+  prefix:  <redis key prefix> (deepseek)
+
+siliconflow:
+  apiKey : <api key>
+  url:     <api address>
+  model:   <api-model>
+  prefix:  <redis key prefix> (siliconflow)
