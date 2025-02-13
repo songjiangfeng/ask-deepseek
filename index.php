@@ -13,9 +13,13 @@
     </script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
     <link rel="shortcut icon" href="https://chatboxai.app/icon.png">
+     <script type="module" crossorigin src="./src/index-5a690b77.js"></script>
+  <link rel="stylesheet" href="./src/index-5392372f.css">
 </head>
 <body class='bg-slate-100'>
+
 <div class='mx-auto max-w-5xl shadow-md prose bg-white px-2 py-4'>
+
 <h1 class="flex flex-row justify-between items-center my-4 h-8">
             <span>
                 <?php echo $_GET['ask'] ?? 'Deepseek';?>
@@ -24,6 +28,9 @@
                 <img src="https://chatboxai.app/icon.png" class="w-12">
             </a>
         </h1>
+   
+        <div id="app"></div>
+
 <div class="leading-10 ">
 
 
@@ -46,6 +53,7 @@
         'port'   => 6379,
     ]);
     
+   
     $ask = $_GET['ask'] ?? '你好';
     $prompt = $_GET['comment'] ?? $ask;
     $deepseek_ai = new AskAI($ask,$prompt,$deepseek,$redisclient);
@@ -72,9 +80,8 @@
         </a>
         <p><a a href="https://www.deepseek.com/" target="_blank">https://www.deepseek.com/</a></p>
         
+    </div>    
     </div>
-    </div>
-  
 </body>
 </html>
 
